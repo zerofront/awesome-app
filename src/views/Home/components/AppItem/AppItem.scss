@@ -1,0 +1,60 @@
+.AppItem__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+
+  border-bottom: 1px solid #eee;
+
+  font-size: 13px;
+  color: #999;
+
+  background: #fff;
+}
+
+.AppItem__logo {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 15px;
+}
+.AppItem__info {
+  width: 140px;
+  height: 70px;
+
+  overflow: hidden;
+}
+.AppItem__name {
+  display: inline-block;
+  margin-bottom: 5px;
+  line-height: 30px;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.AppItem__discountedPrice {
+  width: 60px;
+  height: 26px;
+  line-height: 26px;
+
+  text-align: center;
+
+  border-radius: 20px;
+
+  color: #fff;
+  background: #e33344;
+}
+
+.dot {
+  display: inline-block;
+  margin: 0 8px;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+
+  border-radius: 10px;
+  border: 2px solid rgba(10,37,51,.24);
+}
