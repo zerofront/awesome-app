@@ -11,7 +11,7 @@ const AppList: React.SFC<IAppItemProps> = (props: IAppItemProps) => {
   const { appInfo } = props
 
   return (
-    <div className="AppItem__wrapper">
+    <li className="AppItem__wrapper">
       <img className="AppItem__logo" src={appInfo.iconImg} alt="App 的 logo"/>
       <div className="AppItem__info">
         <div>
@@ -25,7 +25,7 @@ const AppList: React.SFC<IAppItemProps> = (props: IAppItemProps) => {
       </div>
       <div className="AppItem__originalPrice">￥{appInfo.originalPrice}</div>
       <div className="AppItem__discountedPrice">{formatFree(appInfo.discountedPrice)}</div>
-    </div>
+    </li>
   )
 }
 

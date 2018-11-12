@@ -11,6 +11,9 @@
     "postcss-px-to-viewport": "0.0.3",
     "postcss-viewport-units": "^0.1.6",
     "postcss-write-svg": "^3.0.1",
+    "rc-animate": "^2.5.4",
+    "rc-queue-anim": "^1.6.7",
+    "rc-tween-one": "^2.2.16",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts-ts": "3.1.0"

@@ -28,13 +28,22 @@
 }
 .AppItem__name {
   display: inline-block;
+  width: 100%;
   margin-bottom: 5px;
   line-height: 30px;
 
   font-size: 14px;
   font-weight: 700;
   color: #000;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
+.AppItem__originalPrice {
+  text-decoration: line-through;
+}
+
 .AppItem__discountedPrice {
   width: 60px;
   height: 26px;
