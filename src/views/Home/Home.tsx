@@ -2,7 +2,7 @@ import * as React from 'react'
 import Banner from './components/Banner'
 import AppList from './components/AppList'
 
-import { IAppItem } from './components/AppItem'
+import { IAppItemProps } from './components/AppItem'
 
 import $http from '../../service/http/Http'
 
@@ -17,7 +17,7 @@ export interface IHomeState {
   /**
    * app in total
    */
-  appList: IAppItem[];
+  appList: IAppItemProps[];
 
   /**
    * 当前页数
@@ -35,7 +35,7 @@ class Home extends React.Component<IHomeProps, IHomeState> {
     const url = '/api/v5/appso/discount/?platform=web&limit=10'
     $http.Get(url)
       .then((data: any) => {
-        const appList = data.objects.map((item: any): IAppItem => {
+        const appList = data.objects.map((item: any): IAppItemProps => {
           console.log()
           const downloadInfoForIOS = item.app.download_link.find((downloadItem: any) => downloadItem.platform === 'ios')
 

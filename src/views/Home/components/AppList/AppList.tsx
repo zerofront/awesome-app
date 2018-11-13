@@ -1,16 +1,16 @@
 import * as React from 'react'
 import QueueAnim from 'rc-queue-anim'
-import AppItem, { IAppItem } from '../AppItem'
+import AppItem, { IAppItemProps } from '../AppItem'
 
 interface IAppListProps {
-  appList: IAppItem[]
+  appList: IAppItemProps[]
 }
 
 const AppList: React.SFC<IAppListProps> = (props: IAppListProps) => {
-  const appItems = props.appList.map((item: IAppItem) => {
+  const appItems = props.appList.map((item: IAppItemProps) => {
     return (
       <AppItem
-        appInfo={item}
+        {...item}
         key={item.id}
       />
     )
