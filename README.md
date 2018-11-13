@@ -9,6 +9,21 @@
 ## 相关
 本项目仅供学习与交流使用。UI都是网络资源的。如有侵权，请联系wuqinghao@outlook.com
 
+## TODO
+
+目前还有一些部分没完成，包括但不限于：
+
+- [ ] 限免App的详情，详情出现的动画，详情内App介绍图切换的动画
+- [ ] CSS（CSS Module、style-component、CSS-Block）选一个
+- [ ] 类型定义相关的文件结构优化
+- [ ] 使用 hooks，等react 16.7
+- [ ] 使用 unstated 管理全局状态
+- [ ] 使用 RxJs 管理异步流程
+
+- [ ] 用户基础功能
+- [ ] 左滑不再推荐该应用
+- [ ] 评论功能
+- [ ] PWA推荐关注的应用
 
 ## 配置
 - [本项目使用的模板](https://github.com/wmonk/create-react-app-typescript)
